@@ -1,0 +1,7 @@
+SELECT `users`.`id`,`name`,`email`,`password`,`status`.`status`,`last_login`,`created` 
+FROM `objects` 
+JOIN `users` 
+    ON(`objects`.`id` = `users`.`object_id`) 
+JOIN `status` 
+    ON(`status`.`id`=`objects`.`status_id`) 
+WHERE (`status`.`status` ='Онлайн' AND `objects`.`created` > '2020-01-01');
