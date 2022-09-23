@@ -1,4 +1,5 @@
 <?php
+/* Не до конца понял условие */
 class TestClass
 {
     public function filterPrices($minPrice,$maxPrice, $items){
